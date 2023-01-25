@@ -208,7 +208,7 @@ const ResponsiveContainer = ({ children }) => (
    * For large applications it may not be best option to put all page into these containers at
    * they will be rendered twice for SSR.
    */
-  <MediaContextProvider>
+  <MediaContextProvider disableDynamicMediaQueries>
     <DesktopContainer>{children}</DesktopContainer>
     <MobileContainer>{children}</MobileContainer>
   </MediaContextProvider>
