@@ -222,11 +222,12 @@ const HomepageLayout = () => (
   <div>
     <Head>
       <title>Create Next App</title>
-      <Script
-        src="https://assets.adobedtm.com/7a84fdea953b/09aece6f582f/launch-e6cc9ebc113b-development.min.js"
-        async
-      />
     </Head>
+    <Script
+      src="https://assets.adobedtm.com/7a84fdea953b/09aece6f582f/launch-e6cc9ebc113b-development.min.js"
+      strategy="beforeInteractive"
+      async
+    />
     <ResponsiveContainer>
       <Segment style={{ padding: '8em 0em' }} vertical>
         <Grid container stackable verticalAlign="middle">
